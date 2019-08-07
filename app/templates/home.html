@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+{% include 'components/head.html' %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body background="static/pics/toronto1.png">
+    <div style="padding: 0% 10% 0% 10%; margin-top:50px; min-height:425px;">
+
+        <title>Bill Sun's Portfolio</title>
+        </head>
+
+        <div class="box">
+            <img src="static/pics/portrait1.jpg" alt="" class="box-img">
+
+            <h1>Bill Yuan Hong Sun</h1>
+            <h5>Machine Learning and Software Engineer</h5>
+
+            <p>
+                Hi! I am a third-year <a href="https://engsci.utoronto.ca/explore_our_program/majors/machine-intelligence/">
+                Machine Intelligence</a> student @ University of Toronto. 
+                I am currently on PEY co-op at <a href="https://www.nuralogix.ai/">Nuralogix</a> 
+                as a Data Science Software Developer, working on the <a href="https://www.deepaffex.ai/en/">DeepAffex</a> API. 
+                This is a showcase of my skills, projects, and insights. Enjoy!
+            </p>
+
+            <ul>
+                <li><a href="https://www.linkedin.com/in/bill-yuan-hong-sun/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/billyhsun"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+            </ul>
+
+            <ul>
+                <li><form action="{{ url_for('about') }}">
+                    <button>About</button>
+                </form></li>
+
+                <li><form action="{{ url_for('projects') }}">
+                    <button>Projects</button>
+                </form></li>
+
+                <li>
+                    <button onclick="location.href='static/files/Bill-Yuan-Hong-Sun-Resume-1.pdf'">Résumé</button>
+                </li>
+
+                <li><form action="{{ url_for('blog') }}">
+                    <button>Blog</button>
+                </form></li>
+            </ul>
+
+        </div>
+    </div>
+
+    {% include 'components/foot.html' %}
+
+</body>
+</html>

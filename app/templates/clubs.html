@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+{% include 'components/head.html' %}
+
+{% include 'components/menu.html' %}
+
+<body background = "static/pics/background2.jpg">
+<div style="padding: 0% 10% 0% 10%; margin-top:170px; min-height:800px;">
+
+
+<!--Main-->
+<title>Extracurriculars - Bill Sun</title>
+
+<h1>Extracurriculars Summary</h1><br>
+
+	<figure class="item">
+	<a href="{{ url_for('toastmasters') }}" target="_blank"><img src="static/pics/toastmasters.jpg" alt="portfolio item" width=400 height=250></a>
+	<figcaption class= "desc">
+		<p><font color="white"><strong>Toastmasters</strong></font></p>
+		<p><font color="white">North York Toastmasters Club</font></p>
+	</figcaption>
+	</figure>
+
+    <figure class="item">
+	<a href="{{ url_for('solarcar') }}" target="_blank"><img src="static/pics/solarcar.jpg" alt="portfolio item" width=400 height=250></a>
+	<figcaption class= "desc">
+	    <p><font color="white"><strong>Solar Car Racing Team</strong></font></p>
+	    <p><font color="white">University of Toronto</font></p>
+	</figcaption>
+    </figure>
+
+    <figure class="item">
+	<a href="{{ url_for('ewb') }}" target="_blank"><img src="static/pics/ewb.jpg" alt="portfolio item" width=400 height=250></a>
+	<figcaption class= "desc">
+	    <p><font color="white"><strong>Engineers Without Borders</strong></font></p>
+	    <p><font color="white">Youth Engagement Portfolio, University of Toronto Chapter</font></p>
+	</figcaption>
+    </figure>
+
+    <figure class="item">
+	<a href="{{ url_for('ilead') }}" target="_blank"><img src="static/pics/thegame.jpg" alt="portfolio item" width=400 height=250></a>
+	<figcaption class= "desc">
+	    <p><font color="white"><strong>Improving Bike Theft Awareness</strong></font></p>
+	    <p><font color="white">Institute for Leadership Education in Engineering, <i>The Game</i> Program, University of Toronto</font></p>
+	</figcaption>
+    </figure>
+
+    <figure class="item">
+	<a href="{{ url_for('weather') }}" target="_blank"><img src="static/pics/el-nino.jpg" alt="portfolio item" width=400 height=250></a>
+	<figcaption class= "desc">
+	    <p><font color="white"><strong>Earth Sciences Hobby Research</strong></font></p>
+	    <p><font color="white">Personal Hobby Project</font></p>
+	</figcaption>
+    </figure>
+
+	<figure class="item">
+	<a href="{{ url_for('fes') }}" target="_blank"><img src="static/pics/Logo 2.png" alt="portfolio item" width=250 height=250></a>
+	<figcaption class= "desc">
+		<p><font color="white"><strong>Future Engineers Society</strong></font></p>
+		<p><font color="white">Earl Haig Secondary School</font></p>
+	</figcaption>
+	</figure>
+
+<br>
+<p>Click the images to view the details for each activity.</p> 
+<br><br>
+</div>
+
+{% include 'components/foot.html' %}
+
+</body>
+</html>

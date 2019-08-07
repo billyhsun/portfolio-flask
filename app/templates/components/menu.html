@@ -1,0 +1,45 @@
+<!--Menu-->
+<div class="navbar" style="z-index: 2;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="button"><a href="{{ url_for('blog') }}" style="color: #e6e6e6; text-decoration: none; padding: 15px 15px">Blog</a></div>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="{{ url_for('clubs') }}" style="color: #e6e6e6; text-decoration: none; padding: 15px 0px">Extracurriculars</a>
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="{{ url_for('toastmasters') }}">Toastmasters</a>
+                <a href="{{ url_for('solarcar') }}">Solar Car Racing Team</a>
+                <a href="{{ url_for('ewb') }}">Engineers Without Borders</a>
+                <a href="{{ url_for('ilead') }}">iLead The Game, University of Toronto</a>
+                <a href="{{ url_for('fes') }}">Future Engineers Society, Earl Haig Secondary School</a>
+                <a href="{{ url_for('weather') }}">Earth Sciences Hobby Research</a>
+                <a href="{{ url_for('deep') }}">DEEP Summer Academy, University of Toronto</a>
+                <a href="{{ url_for('swim') }}">Swimming and Lifeguarding</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn"><a href="{{ url_for('projects') }}" style="color: #e6e6e6; text-decoration: none; padding: 15px 0px">Projects</a>
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://github.com/billyhsun/MusicGenre">Music Genre Classifier</a>
+                <a href="https://github.com/billyhsun/Deep-Learning-Projects">Other Machine Learning Projects</a>
+                <a href="{{ url_for('research') }}">Transportation Modelling Research</a>
+                <a href="https://devpost.com/software/chinabridge">Content Hosting App</a>
+                <a href="https://devpost.com/software/surroundsound-1u9ljk">Music Sharing App</a>
+                <a href="{{ url_for('game') }}">Boxhead Video Game</a>
+                <a href="{{ url_for('parking') }}">Parking Manager App Simulator</a>
+                <a href="{{ url_for('aer') }}">Autonomous Pill Packaging Machine</a>
+                <a href="{{ url_for('praxis') }}">ESC101/102 - Praxis I + II</a>
+                <a href="{{ url_for('civ') }}">CIV102 - Structures and Materials</a>
+            </div>
+        </div>
+        <div class="button"><a href="{{ url_for('about') }}" style="color: #e6e6e6; text-decoration: none; padding: 15px 15px">About Me</a></div>
+        
+    </div>
+    
+    <div class="logo"><h1 style="margin:1px;">
+        <a href="{{ url_for('home') }}" style="text-decoration: none;">bill.</a></h1>
+    </div>
+</div>

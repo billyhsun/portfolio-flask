@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'components/head.html' %}
+
+{% include 'components/menu.html' %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='about.css')}}">
+<div style="padding: 0% 10% 0% 10%; margin-top:170px; min-height:450px;">
+<body style="background-color:#333333;">
+
+
+  <!--Main-->
+  <title>About Me - Bill Sun</title>
+
+  <h1>About Me</h1><br>
+
+  <p>Welcome! I’m Bill Sun, a third-year Engineering Science student at the University of Toronto, majoring in 
+    <a href="https://engsci.utoronto.ca/explore_our_program/majors/machine-intelligence/">
+    Machine Learning and Artificial Intelligence</a>. I am enthusiastic about using software, big data, machine learning, 
+    and the engineering approach to solve challenging problems, and helping to improve people's lives through technology.</p>
+
+  <p>Beginning in May 2019, I have begun my <a href="https://engineeringcareers.utoronto.ca/work-experience-programs/professional-experience-year-co-op-program-pey-co-op/">professional experience year (PEY)</a> co-op
+    at <a href="https://www.nuralogix.ai/">NuraLogix</a> as a Data Science Software Developer, where my work is centered around developing a Python 
+    API client for simple access of the <a href="https://www.deepaffex.ai/en/">DeepAffex (DFX)</a> cloud service. I also worked on numerous smaller projects on-board.</p>
+
+  <p>In my spare time, I like to workout, play sports, travel, photograph weather and nature, mentor younger peers, and read the news and books.</p><br><br>
+
+  
+
+  <h2 id="skills" style="text-align:center;">Skills Summary</h2>
+
+  {% include 'components/skills_table.html' %}
+
+  <br> 
+  </div>
+
+  <div style="padding: 0% 10% 0% 10%; margin-top:50px; min-height:700px;">
+
+  <h2 id="exp" style="text-align:center;">Experience Highlight</h2>
+
+  {% include 'components/projects_slides.html' %}
+
+  <br>
+  <p>Click the images to view the details for each project.</p> 
+  <p>If you are interested, you can view my <b>résumé</b> <a href="static/files/Bill-Yuan-Hong-Sun-Resume-1.pdf" style="color: #ffbfbf; padding: 0; text-decoration: none;">here</a>.</p><br>
+
+  </div>
+
+  <div style="padding: 0% 10% 0% 10%; margin-top:50px; min-height:500px;">
+
+  <h2 id="summary" style="color:#FFFFFF; text-align:center;">Personal Statement</h2>
+  <h3>Why Engineering?</h3>
+  <p>I have been interested in engineering at a young age. I have been fascinated by machines, electronics, and transportation equipment. I also tried to copy my father’s technical drawings for fun. When I was taught visual arts, I learned how to represent and express my ideas in a unique manner. After I moved to Canada in 8th grade, and went through the struggles of being an immigrant, I realized the importance of helping out people in need. Incorporating my strengths in math and sciences, as well as my interest in design and research, I decided to peruse in engineering sciences.</p>
+
+  <h3>My Missions</h3>
+  <p>As a student engineer with a diverse background, I envision to make a difference in the community, and in the world we live in. Through my various involvements such as Engineers Without Borders, I hope to reach out towards the community and to those in need by applying my engineering and design skills. More importantly, I help younger students develop engineering design skills, so they can continue the task of making change. Doing that, in my opinion, is not only reaching out to these students and to the community, but it is also my mission as a student engineer. I believe that the core value of being an engineer is to improve people’s lives and make a difference in the world.</p>
+
+  <h3>My Values</h3>
+  <p>In engineering design, I value <i>usability</i> and <i>accessibility</i> since they allows everyone, especially those in need, to use the products with convenience. For usability I value having a proven, functional design over a theoretical and unproven one. As for accessibility, I have witnessed people with deficiencies or disabilities try to use certain things and struggle, so I believe it is important to take consideration of all kinds of people with various needs when it comes to engineering design. In the design process, one of my strengths is making prototypes, both building it and making concept drawings. I also like to develop testing methods to select the best designs, as showcased in my design projects from Praxis I and II. You can read more about my engineering design process here.</p>
+
+  <p>Through the next 3 years, I am continuing my development as a professional engineer, and working to improve my design abilities such as creativity in thinking, as well as learning more about the technical aspects of design.</p>
+  <br>
+
+  <p>You can also read about my engineering insights and reflections in my <a href="{{ url_for('blog') }}" style="color: #ffbfbf; padding: 0; text-decoration: none;">blog</a>.</p>
+  <br><br>
+
+  </div>
+
+  {% include 'components/foot.html' %}
+
+</body>
+</html>

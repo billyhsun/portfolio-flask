@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'components/head.html' %}
+
+{% include 'components/menu.html' %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='contact.css')}}">
+<div style="padding: 0% 10% 0% 10%; margin-top:170px; min-height:800px;">
+<body background="static/pics/background4.jpg">
+
+<!--Main-->
+<title>Contact Me - Bill Sun</title>
+
+<body>
+
+<h1>Contact Me</h1>
+
+</head>
+<body>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="lname">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+
+    <label for="company">Telephone</label>
+    <input type="text" id="number" name="number" placeholder="Your phone number..">
+
+    <label for="subject">Your Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<br>
+
+<p><b>Email</b>: <a href="mailto:billyuanhong.sun@mail.utoronto.ca">billyuanhong.sun@mail.utoronto.ca</a></p>
+
+<p><b>Telephone</b>: +1 (647) 987-3896</p>
+
+<div class="socialmedia">
+    <a href="https://github.com/billyhsun"><img src="static/logos/github.png" alt="gh" width=30></a>
+    <a href="https://www.linkedin.com/in/bill-yuan-hong-sun/"><img src="static/logos/linkedin.png" alt="li" width=30></a>
+    <a href="https://angel.co/bill-sun-1"><img src="static/logos/angellist.png" alt="li" width=30></a>
+    <a href="https://devpost.com/billyhsun"><img src="static/logos/devpost.png" alt="devpost" width=30></a>
+    <a href="https://stackoverflow.com/users/11026180/bill-sun"><img src="static/logos/stackoverflow.png" alt="li" width=30></a>
+    <a href="https://www.instagram.com/billyhsun/?hl=en"><img src="static/logos/instagram.png" alt="in" width=30></a>
+    <a href="https://www.facebook.com/billyuanhong.sun"><img src="static/logos/facebook.png" alt="fb" width=30></a>
+    <a href="https://twitter.com/billsunswag"><img src="static/logos/twitter.png" alt="fb" width=30></a>
+    <a href="mailto:billyuanhong.sun@mail.utoronto.ca"><img src="static/logos/outlook.png" alt="mail" width=30></a>
+</div>
+
+<p>If you are interested, my <b>résumé</b> can be found <a href="static/files/Bill-Yuan-Hong-Sun-Resume-1.pdf">here</a></p>
+<br>
+<br>
+<br>
+
+</div>
+
+{% include 'components/foot.html' %}
+
+</body>
+</html>
